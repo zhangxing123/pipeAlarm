@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/left_drawer"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/user_back"
+    android:choiceMode="singleChoice"
+    tools:context=".view.MainActivity">
+
+    <fragment
+        android:id="@+id/avatar_fragement_usercenter"
+        android:name="com.equityinfo.pipealarm.view.fragment.AvatarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="170dp" />
+
+    <TextView
+        android:id="@+id/left_diver"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/avatar_fragement_usercenter"
+        android:background="@color/transparent2" />
+
+    <TextView
+        android:id="@+id/terminal_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_below="@+id/left_diver"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/select_ter"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/terminal_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/terminal_tv"
+        android:background="@color/white">
+
+        <Spinner
+            android:id="@+id/sp_terminal"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_gravity="center_vertical"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/terminal_tm"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_below="@+id/terminal_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/select_tm"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/terminal_tm"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/terminal_tm"
+        android:background="@color/white">
+
+        <Spinner
+            android:id="@+id/sp_tm"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_gravity="center_vertical"
+             />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_dic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/terminal_tm"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/select_dic"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_dic"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_dic_both"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_sign"
+            android:text="@string/select_dic_both" />
+
+
+    <Button
+        android:id="@+id/bt_dic_unread"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/button_sign"
+
+        android:layout_weight="1"
+        android:text="@string/select_dic_unread" />
+
+    <Button
+        android:id="@+id/bt_dic_read"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/button_sign"
+        android:layout_weight="1"
+        android:text="@string/select_dic_read" />
+    </LinearLayout>
+</RelativeLayout>

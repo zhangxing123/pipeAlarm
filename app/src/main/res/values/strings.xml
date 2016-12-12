@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">pipeAlarm</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="select_button">选项</string>
+    <string name="main_title">管道终端报警</string>
+    <string name="select_ter">选择终端：</string>
+    <string name="select_tm">日起选择：</string>
+    <string name="select_dic">范围选择：</string>
+    <string name="select_dic_both">全部</string>
+    <string name="select_dic_unread">未读</string>
+    <string name="select_dic_read">已读</string>
+    <string name="ter_error">"终端不存在或数据错误"</string>
+    <string name="ter_error2">"没有更多数据"</string>
+
+    <string-array name="tab_names">
+        <item>首页</item>
+        <item>应用</item>
+        <item>游戏</item>S
+        <item>专题</item>
+        <item>分类</item>
+        <item>排行</item>
+    </string-array>
 </resources>
